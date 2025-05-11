@@ -1,0 +1,80 @@
+<html>
+<!--https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B4%D0%BE%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2_%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%B5%D0%B3%D0%BE_%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F#%D0%94%D0%BE%D0%BC%D0%B5%D0%BD%D1%8B_%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%B5%D0%B3%D0%BE_%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F_%D0%BF%D0%BE_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B0%D0%BC -->
+<style>
+#a1 * {font-size:20px;}
+img{margin-top:22px;position:relative;border:1px solid #888;display:inline-block;}
+*{font-size:25px;font-family:sans-serif;}
+body{padding:50px;}
+.v:after {content:"'";position:absolute;top:8px;left:50%;
+w0idth:100px;h0eight:100px;b0ackground:red;}
+div{margin:0 2px; position:relative;
+background:yellow;
+background:white;
+display:inline-block;}
+
+</style>
+<body>
+<br>
+<hr>
+<!--
+O<img src="ne.webp" class="v"> o<img src="ug.webp"><img src="ht.webp"> <img src="ne.webp"><img src="ve.webp">r <img src="to.webp"> tur<img src="no.webp"><img src="ne.webp">'<img src="sb.webp" class="v">a<img src="ck.webp"> o<img src="na.webp"> <img src="th.webp"><img src="re.webp"><img src="at.webp">e<img src="ne.webp">d d<img src="an.webp"><img src="ge.webp">r <img src="an.webp">d <img src="tr.webp"><img src="yt.webp">o <img src="ru.webp"><img src="na.webp">way <img src="fr.webp"><img src="om.webp"> <img src="it.webp">. If you <img src="do.webp"> <img src="th.webp"><img src="at.webp">, you w<img src="il.webp">l <img src="do.webp">ubl<img src="et.webp">he d<img src="an.webp"><img src="ge.webp">r. But if you <img src="me.webp"><img src="et.webp"> <img src="it.webp"> <img src="pr.webp"><img src="om.webp"><img src="pt.webp"><img src="ly.webp"> <img src="an.webp">d w<img src="it.webp">hou<img src="tf.webp"><img src="li.webp"><img src="nc.webp">h<img src="in.webp"><img src="gy.webp">ou w<img src="il.webp"><img src="lr.webp">educ<img src="et.webp">he d<img src="an.webp"><img src="ge.webp">r <img src="by.webp"> h<img src="al.webp">f.
+-->
+<br><hr>
+
+<article id="z"></article>
+<hr style="height:14px; background:maroon">
+<main id="main">
+
+
+</main>
+
+<script>
+/*
+let a=[
+'O',['ne'],' o',['ug'],['ht'],' ',['ne'],['ve'],'r ',['to'],' tur',['n o'],['ne'],"'",['s b'],'a',['ck'],' o',['n a'],' ',['th'],['re'],['at'],'e',['ne'],'d d',['an'],['ge'],'r ',['an'],'d ',['tr'],['y t'],'o ',['ru'],['n a'],'way ',['fr'],['om'],' ',['it'],'. If you ',['do'],' ',['th'],['at'],', you w',['il'],'l ',['do'],'ubl',['e t'],'he d',['an'],['ge'],'r. But if you ',['me'],['et'],' ',['it'],' ',['pr'],['om'],['pt'],['ly'],' ',['an'],'d w',['it'],'hou',['t f'],['li'],['nc'],'h',['in'],['g, y'],'ou w',['il'],['l r'],'educ',['e t'],'he d',['an'],['ge'],'r ',['by'],' h',['al'],'f.',
+];
+*/
+
+let a=[['i d'],"on't ",['li'],['ke'],'',' ',['th'],'o',['se'],' ',['co'],'ld, ',['pr'],['ec'],['is'],'e, <br>',['pe'],'rf',['ec'],'t ',['pe'],'o',['pl'],'e, who, ',['in'],' or',['de'],'r ',['no'],'t ',['to'],' s',['pe'],'ak w',['ro'],['ng'],', ',['ne'],'v',['er'],' s',['pe'],'ak ',['at'],' ',['al'],'l, ',['an'],'d ',['in'],' <br>or',['de'],'r ',['no'],['t t'],'o ',['do'],' w',['ro'],['ng'],' ',['ne'],['ve'],'r ',['do'],' <br>',['an'],['yt'],'h',['in'],'g.',];//];['pn'],['gs']
+
+const fn=x=>{
+switch (x){
+case 'yt':return x+'.png" width="70"';
+case 'nc':return x+'.png" width="70"';
+case 'np':return x+'.webp" style="border:none"';
+case 'ro':return x+'.png" width="70"';
+case 'wf':return x+'.png" width="70"';
+case 'pn':
+case 'gs':return x+'.webp" width="90"';
+
+default: return x+'.webp"';// width="100%"
+}//end switch
+
+}
+
+/*
+z.innerHTML=a.map(c=>{
+let j=(Array.isArray(c)&&c[0].length>2)?' class="v"':'';
+return Array.isArray(c)?'<div'+j
++'><img src="'+(c[0][0]+c[0][c[0].length-1])
++'.webp"></div>':c})
+.join('');*/
+
+z.innerHTML=a.map(c=>{
+let j=(Array.isArray(c)&&c[0].length>2)?' class="v"':'';
+return Array.isArray(c)?'<div'+j
++'><img src="'+fn(c[0][0]+c[0][c[0].length-1])
++'></div>':c.replaceAll(' ','&nbsp; &nbsp;')})
+.join('');
+
+main.innerHTML=['ad','ae','af','ag','ai','al','am','an','ao','aq','ar','as','at','au','aw','ax','az','ba','bb','bd','be','bf','bg','bh','bi','bj','bm','bn','bo','br','bs','bt',/*'bv',*/'bw','by','bz','ca','cc','cd','cf','cg','ch','ci','ck','cl','cm','cn','co','cr','cu','cv','cx','cy','cz','de','dj','dk','dm','do','dz','ec','ee','eg','er','es','et','eu','fi','fj','fk','fm','fo','fr','ga','gb','gd','ge','gg','gh','gi','gl','gm','gn','gq','gr','gs','gt','gu','gw','gy','hk','hn','hr','ht','hu','id','ie','il','im','in','io','iq','ir','is','it','je','jm','jo','jp','ke','kg','kh','ki','km','kn','kp','kr','kw','ky','kz','la','lb','lc','li','lk','lr','ls','lt','lu','lv','ly','ma','mc','md','me','mg','mh','mk','ml','mm','mn','mo','mp','mq','mr','ms','mt','mu','mv','mw','mx','my','mz','na','ne','nf','ng','ni','nl','no','np','nr','nu','nz','om','pa','pe','pf','pg','ph','pk','pl','pn','pr','ps','pt','pw','py','qa','ro','rs','ru','rw','sa','sb','sc','sd','se','sg','si','sk','sl','sm','sn','so','sr','st','su','sv','sy','sz','tc','td','tf','tg','th','tj','tk',/*'tl',*/'tm','tn','to',/*'tp',*/'tr','tt','tv','tw','tz','ua','ug','uk','us','uy','uz','va','vc','ve','vg','vi','vn','vu','ws','ye','yt','za','zm','zw',].map(c=>'<img  width="50" src="'+fn(c)+' alt="'+c+'" title="'+c+'">').join(' ');
+/*'nc',*//*'wf',*//*'sj',*/
+/*
+I don't like those cold, precise, perfect people, who, in order not to speak wrong, never speak at all, and in order not to do wrong never do anything. — Я не люблю этих холодных, аккуратных, совершенных людей, которые, чтобы не сказать неправильно, вообще ничего не говорят, а чтобы не совершить неправильного поступка — вообще ничего не делают (Генри Бичер) 
+*/
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!-- from 4 domens -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href=
+"data:image/gif;base64,R0lGODlhEAAQAOYAAP7cAGeHYQJNof8ADf/xAFp9aQBAsAJOnwJMoQBXuv3bAFp6aQBBrgJQnABXuf/dAP7bAP/hAP/cAP/yAFN5bQA7tQBKoQBJo//gAP/jAOXFA//qCeDGRIGTUSBjjxxijgFNsdi6Fo9wF//eCKy0G7i3GZ57NI6CRMi9I5WsTABbx9O5KmdLJpKzV6q7woOVfod5e61Tb6CeSQBbwf/iAP/sB4x0dpFqJG6il8Hi+HOcfRSIoGpvbLWDGB9SkPLTFVpCQOO3AHmljIfQ9IGzbzGhgYBtY8ScEw9ultO1H2dLH//0AG6lOFeWkIdyfG5IgHZAbpihSwBQz/XVCaiKF//YFdWxGNvBCMiuHbu4JerbBHCWZABbxfrZAP/oAuvTL//tAFx+aQA9tQBHqABBtgBPw1h6agFPnAJNoABYt1p7aQJQnQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQEewABACwAAAAAEAAQAAAHqIAAgoOEhYaHiBiKNBGKD4cPGSErNT9JUzSGChAaIiw2QEpUXRCGERsjGTdBS1Vej4QKEhwkLThCTFZfEAqDBAQTESUuOUNNV2C/BAABBQsUHSYvOkROWGFmagUBAgYMFR4nMDtFT1li3gYCAgcNFh8oMTxGUFpjZ2sH6wgCFyApMnocibKFDBoE/AQkcDBggIoZPpBI4VImTYIEAhpq3Mixo8ePIDcGAgA7">
+  <title>Domens flags</title>
+<!--https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B4%D0%BE%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2_%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%B5%D0%B3%D0%BE_%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F#%D0%94%D0%BE%D0%BC%D0%B5%D0%BD%D1%8B_%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%B5%D0%B3%D0%BE_%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F_%D0%BF%D0%BE_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B0%D0%BC -->
+<style>
+	#a1 * {font-size:20px;}
+	img{margin-top:22px;position:relative;border:1px solid #888;display:inline-block;}
+	*{font-size:25px;font-family:sans-serif;}
+	body{padding:0 50px;}
+	.v:after {content:"'";position:absolute;top:8px;left:50%;}
+	div{margin:0 2px; position:relative;
+	background:transparent;
+	display:inline-block;}
+	button {background: none;border: none;}
+	button#btn {border:1px solid red;cursor:pointer;background:#ccc;
+	border-radius:44px;padding:4px 8px}
+	#ta{width:99%;max-width:666px;}
+@media screen and (max-width: 320px) {
+body{padding:1px;}
+button{font-size:15px}
+#ta{font-size:15px}
+}
+</style>
+<body>
+<hr>
+<textarea id="ta">whitesnow minecraft</textarea><br>
+<button id="btn">START</button>
+<br><hr>
+<article id="z"></article>
+<hr style="height:14px; background:maroon">
+<main id="main" style="display:none">
+</main>
+<script>
+//https://englishshow.ru/statii/beautiful-english-phrases
+var o={
+'-.ac':'Остров Вознесения',
+'ad':'Андорра',
+'ae':'ОАЭ',
+'af':'Афганистан',
+'ag':'Антигуа и Барбуда',
+'ai':'Ангилья',
+'al':'Албания',
+'am':'Армения',
+'an':'Нидерландские Антильские острова',
+'ao':'Ангола',
+'aq':'Антарктика',
+'ar':'Аргентина',
+'as':'Американское Самоа',
+'at':'Австрия',
+'au':'Австралия',
+'aw':'Аруба',
+'ax':'Аландские острова',
+'az':'Азербайджан',
+'ba':'Босния и Герцеговина',
+'bb':'Барбадос',
+'bd':'Бангладеш',
+'be':'Бельгия',
+'bf':'Буркина-Фасо',
+'bg':'Болгария',
+'bh':'Бахрейн',
+'bi':'Бурунди',
+'bj':'Бенин',
+'bm':'Бермуды',
+'bn':'Бруней',
+'bo':'Боливия',
+'br':'Бразилия',
+'bs':'Багамские Острова',
+'bt':'Бутан',
+'bv':'Остров Буве',
+'bw':'Ботсвана	',
+'by':'Беларусь',
+'bz':'Белиз',
+'ca':'Канада',
+'cc':'Кокосовые острова',
+'cd':'ДР Конго',
+'cf':'ЦАР',
+'cg':'Республика Конго',
+'ch':'Швейцария	',
+'ci':'Кот-д’Ивуар',
+'ck':'Острова Кука',
+'cl':'Чили',
+'cm':'Камерун',
+'cn':'Китай',
+'co':'Колумбия',
+'cr':'Коста-Рика',
+'cu':'Куба',
+'cv':'Кабо-Верде',
+'cx':'Остров Рождества',
+'cy':'Кипр',
+'cz':'Чехия',
+'de':'Германия',
+'dj':'Джибути',
+'dk':'Дания',
+'dm':'Доминика',
+'do':'Доминиканская Республика',
+'dz':'Алжир',
+'ec':'Эквадор',
+'ee':'Эстония',
+'eg':'Египет',
+'er':'Эритрея',
+'es':'Испания',
+'et':'Эфиопия',
+'eu':'Европейский союз',
+'fi':'Финляндия	',
+'fj':'Фиджи	',
+'fk':'Фолклендские острова',
+'fm':'Федеративные Штаты Микронезии',
+'fo':'Фарерские острова',
+'fr':'Франция',
+'ga':'Габон',
+'gb':'Великобритания',
+'gd':'Гренада',
+'ge':'Грузия',
+'-.gf':'Гвиана',
+'gg':'Гернси',
+'gh':'Гана',
+'gi':'Гибралтар',
+'gl':'Гренландия',
+'gm':'Гамбия',
+'gn':'Гвинея',
+'-.gp':'Гваделупа',
+'gq':'Экваториальная Гвинея',
+'gr':'Греция',
+'gs':'Южная Георгия и Южные Сандвичевы Острова',
+'gt':'Гватемала',
+'gu':'Гуам',
+'gw':'Гвинея-Бисау',
+'gy':'Гайана',
+'hk':'Гонконг',
+'-.hm':'Остров Херд и острова Макдональд',
+'hn':'Гондурас',
+'hr':'Хорватия',
+'ht':'Гаити',
+'hu':'Венгрия',
+'id':'Индонезия',
+'ie':'Ирландия',
+'il':'Израиль',
+'im':'Остров Мэн',
+'in':'Индия',
+'io':'Британская Территория в Индийском Океане',
+'iq':'Ирак',
+'ir':'Иран',
+'is':'Исландия',
+'it':'Италия',
+'je':'Джерси',
+'jm':'Ямайка',
+'jo':'Иордания',
+'jp':'Япония',
+'ke':'Кения',
+'kg':'Кыргызстан',
+'kh':'Камбоджа',
+'ki':'Кирибати',
+'km':'Коморы',
+'kn':'Сент-Китс и Невис',
+'kp':'КНДР',
+'kr':'Республика Корея',
+'kw':'Кувей',
+'ky':'Острова Кайман',
+'kz':'Казахстан',
+'la':'Лаос',
+'lb':'Ливан',
+'lc':'Сент-Люсия',
+'li':'Лихтенштейн',
+'lk':'Шри-Ланка',
+'lr':'Либерия',
+'ls':'Лесото',
+'lt':'Литва',
+'lu':'Люксембург',
+'lv':'Латвия',
+'ly':'Ливия',
+'ma':'Марокко',
+'mc':'Монако',
+'md':'Молдова',
+'me':'Черногория',
+'mg':'Мадагаскар',
+'mh':'Маршалловы Острова',
+'mk':'Северная Македония',
+'ml':'Мали',
+'mm':'Мьянма',
+'mn':'Монголия',
+'mo':'Макао',
+'mp':'Северные Марианские Острова',
+'mq':'Мартиника',
+'mr':'Мавритания',
+'ms':'Монтсеррат',
+'mt':'Мальта',
+'mu':'Маврикий',
+'mv':'Мальдивы',
+'mw':'Малави',
+'mx':'Мексика',
+'my':'Малайзия',
+'mz':'Мозамбик',
+'na':'Намибия',
+'nc':'Новая Каледония',
+'ne':'Нигер',
+'nf':'Остров Норфолк',
+'ng':'Нигерия',
+'ni':'Никарагуа',
+'nl':'Нидерланды',
+'no':'Норвегия',
+'np':'Непал',
+'nr':'Науру',
+'nu':'Ниуэ',
+'nz':'Новая Зеландия',
+'om':'Оман',
+'pa':'Панама',
+'pe':'Перу',
+'pf':'Французская Полинезия',
+'pg':'Папуа — Новая Гвинея',
+'ph':'Филиппины',
+'pk':'Пакистан',
+'pl':'Польша',
+'-.pm':'Сен-Пьер и Микелон',
+'pn':'Острова Питкэрн',
+'pr':'Пуэрто-Рико',
+'ps':'Государство Палестина',
+'pt':'Португалия',
+'pw':'Палау	',
+'py':'Парагвай',
+'qa':'Катар',
+'-.re':'Реюньон',
+'ro':'Румыния',
+'rs':'Сербия',
+'ru':'Россия',
+'рф':'Россия',
+'rw':'Руанда',
+'sa':'Саудовская Аравия',
+'sb':'Соломоновы Острова',
+'sc':'Сейшельские Острова',
+'sd':'Судан',
+'se':'Швеция',
+'sg':'Сингапур',
+'-.sh':'Остров Святой Елены',
+'si':'Словения',
+'sj':'Острова  Шпицберген и  Ян-Майен',
+'sk':'Словакия',
+'sl':'Сьерра-Леоне',
+'sm':'Сан-Марино',
+'sn':'Сенегал',
+'so':'Сомали',
+'sr':'Суринам',
+'st':'Сан-Томе и Принсипи',
+'su':'СССР',
+'sv':'Сальвадор',
+'sy':'Сирия',
+'sz':'Свазиленд',
+'tc':'Теркс и Кайкос',
+'td':'Чад',
+'tf':'Французские Южные и Антарктические территории',
+'tg':'Того',
+'th':'Таиланд',
+'tj':'Таджикистан',
+'tk':'Токелау',
+'tl':'Восточный Тимор',
+'tm':'Туркменистан',
+'tn':'Тунис',
+'to':'Тонга',
+'tp':'Восточный Тимор',
+'tr':'Турция',
+'tt':'Тринидад и Тобаго',
+'tv':'Тувалу',
+'tw':'Китайская Республика (Тайвань)',
+'tz':'Танзания',
+'ua':'Украина',
+'ug':'Уганда',
+'uk':'Великобритания',
+'us':'США',
+'uy':'Уругвай',
+'uz':'Узбекистан',
+'va':'Ватикан',
+'vc':'Сент-Винсент и Гренадины',
+'ve':'Венесуэла',
+'vg':'Виргинские Острова (Великобритания)',
+'vi':'Виргинские Острова (США)',
+'vn':'Вьетнам',
+'vu':'Вануату',
+'wf':'Уоллис и Футуна',
+'ws':'Самоа	Western Samoa',
+'ye':'Йемен',
+'yt':'Майотта',
+'za':'ЮАР',
+'zm':'Замбия',
+'zw':'Зимбабве',
+}
+let s='The future belongs to those, who believe in beauty of their dreams...'.toLowerCase();
+const boy=s=>{
+	let a=s.replaceAll(/(ad|ae|af|ag|ai|al|am|an|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cx|cy|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gg|gh|gi|gl|gm|gn|gq|gr|gs|gt|gu|gw|gy|hk|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|mv|mw|mx|my|mz|na|ne|nf|ng|ni|nl|no|np|nr|nu|nz|om|pa|pe|pf|pg|ph|pk|pl|pn|pr|ps|pt|pw|py|qa|ro|rs|ru|rw|sa|sb|sc|sd|se|sg|si|sk|sl|sm|sn|so|sr|st|su|sv|sy|sz|tc|td|tf|tg|th|tj|tk|tm|tn|to|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|ws|ye|yt|za|zm|zw)/gi,"<'$1'>");
+	let d=a.split(/(<'..'>)/g).filter(c=>c);
+	let e=d.map(c=>((c.indexOf('>')>-1)?[c[2]+c[3]]:c));
+	return e
+	}
+let a=boy(s);
+const fn=x=>{
+	let i='img/'+x;
+	let j=x+'\n'+o[x];
+	switch (x){
+	case 'af':return i+'.webp" width="70" title="'+j+'"';
+	case 'yt':return i+'.png" width="70" title="'+j+'"';
+	case 'nc':return i+'.png" width="70" title="'+j+'"';
+	case 'np':return i+'.webp" style="border:none" title="'+j+'"';
+	case 'ro':return i+'.png" width="70" title="'+j+'"';
+	case 'wf':return i+'.png" width="70" title="'+j+'"';
+	case 'pn':
+	case 'gs':return i+'.webp" width="90" title="'+j+'"';
+	default: return i+'.webp" title="'+j+'"';
+	}//end switch
+	}
+function girl(){
+	z.innerHTML='<button>'+a.map(c=>{
+	let j=(Array.isArray(c)&&c[0].length>2)?' class="v"':'';
+	return Array.isArray(c)?'<div'+j
+	+'><img src="'+fn(c[0][0]+c[0][c[0].length-1])
+	+'></div>':c.replaceAll(/\s+/g,'</button>&nbsp;<button>')})
+	.join('')+'</button>';
+	}
+girl();
+btn.addEventListener('click',()=>{
+	a=boy(ta.value.toLowerCase());
+	girl()
+	});
+main.innerHTML=['ad','ae','af','ag','ai','al','am','an','ao','aq','ar','as','at','au','aw','ax','az','ba','bb','bd','be','bf','bg','bh','bi','bj','bm','bn','bo','br','bs','bt',/*'bv',*/'bw','by','bz','ca','cc','cd','cf','cg','ch','ci','ck','cl','cm','cn','co','cr','cu','cv','cx','cy','cz','de','dj','dk','dm','do','dz','ec','ee','eg','er','es','et','eu','fi','fj','fk','fm','fo','fr','ga','gb','gd','ge','gg','gh','gi','gl','gm','gn','gq','gr','gs','gt','gu','gw','gy','hk','hn','hr','ht','hu','id','ie','il','im','in','io','iq','ir','is','it','je','jm','jo','jp','ke','kg','kh','ki','km','kn','kp','kr','kw','ky','kz','la','lb','lc','li','lk','lr','ls','lt','lu','lv','ly','ma','mc','md','me','mg','mh','mk','ml','mm','mn','mo','mp','mq','mr','ms','mt','mu','mv','mw','mx','my','mz','na','ne','nf','ng','ni','nl','no','np','nr','nu','nz','om','pa','pe','pf','pg','ph','pk','pl','pn','pr','ps','pt','pw','py','qa','ro','rs','ru','rw','sa','sb','sc','sd','se','sg','si','sk','sl','sm','sn','so','sr','st','su','sv','sy','sz','tc','td','tf','tg','th','tj','tk',/*'tl',*/'tm','tn','to',/*'tp',*/'tr','tt','tv','tw','tz','ua','ug','uk','us','uy','uz','va','vc','ve','vg','vi','vn','vu','ws','ye','yt','za','zm','zw',].map(c=>'<img  width="50" src="'+fn(c)+' alt="'+c+'" title="'+(c+o['cc'])+'">').join(' ');
+/*'nc',*//*'wf',*//*'sj',*/
+</script>
+</body>
+</html>
